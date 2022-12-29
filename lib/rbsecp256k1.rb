@@ -9,7 +9,7 @@ require 'rbsecp256k1/util'
 require 'rbsecp256k1/version'
 
 puts '*' * 300
-Dir.foreach(File.join(__dir__)) do |item|
+Dir.foreach(File.join(__dir__,'rbsecp256k1')) do |item|
   puts item
 end
 puts '*' * 300
