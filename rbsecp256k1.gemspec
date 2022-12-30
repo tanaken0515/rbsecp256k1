@@ -14,6 +14,7 @@ Gem::Specification.new do |s|
   s.homepage = 'https://github.com/etscrivner/rbsecp256k1'
 
   s.files = (
+    Dir['lib/rbsecp256k1/*.{rb,so,bundle,dll}'] +
     Dir['lib/**/**.rb'] +
     Dir['documentation/**.md'] +
     %w[ext/rbsecp256k1/rbsecp256k1.c ext/rbsecp256k1/extconf.rb Rakefile README.md]
