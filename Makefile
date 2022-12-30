@@ -6,7 +6,7 @@ build:
 	$(COMPILE_PREFIX) bundle exec rake compile
 
 clean:
-	rm -rf *~ rbsecp256k1-*.gem lib/rbsecp256k1/rbsecp256k1.so tmp .yardoc
+	rm -rf *~ rbsecp256k1-*.gem tmp .yardoc
 
 docker:
 	docker build -t rbsecp256k1 .
