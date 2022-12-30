@@ -8,10 +8,15 @@ require 'rbsecp256k1/context'
 require 'rbsecp256k1/util'
 require 'rbsecp256k1/version'
 
+# C extension
+begin
+  require_relative 'rbsecp256k1/rbsecp256k1.bundle'
+rescue LoadError
+  require 'rbsecp256k1/rbsecp256k1'
+end
+
 puts '*' * 300
 Dir.foreach(File.join(__dir__,'rbsecp256k1')) do |item|
   puts item
 end
 puts '*' * 300
-
-require 'rbsecp256k1/rbsecp256k1'
